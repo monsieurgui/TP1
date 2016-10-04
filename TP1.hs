@@ -110,21 +110,17 @@ instance Eq Film where
     Sortie: Liste d'acteurs
 	3pts-}
 
-	selectionActeursCriteres :: [Critere] -> [Acteur] -> [Acteur]
-  selectionActeursCriteres [] _ = []
-  selectionActeursCriteres (x:xs) ys =
-                                      if
 
 
 {-  2- la fonction selectionActeursFilm retourne la liste formée des acteurs pour lesquels le film passé en paramètre satisfait leurs restrictions
     Entrées: un Film, une Liste d'acteurs (dans cette ordre)
 	Sortie: Liste d'acteurs
     3pts	-}
-  selectionActeursFilm :: Film a -> [Acteur] -> [Acteur]
-  selectionActeursFilm = []_ = []
-  selectionActeursFilm = _[] = []
-  selectionActeursFilm x xs =
-                                if ()
+    selectionActeursFilm :: Film -> [Acteur] -> [Acteur]
+    selectionActeursFilm [] _ = []
+    selectionActeursFilm x (y:ys) =
+                                filter (titreFilm x == titreFilm y) ys 
+
 
 
 {-  3- la fonction prendrePremier prend un couple (n,l) et retourne les n premiers elements de la liste l.
